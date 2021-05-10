@@ -8,7 +8,7 @@
 - The authentication works by creating a `jwt token` using the user input values.
 - Then you can view the `user values` by processing the token in the user url.
 
-##### You can checkout the project in https://lit-hamlet-80953.herokuapp.com/
+##### You can checkout the project in https://lit-hamlet-80953.herokuapp.com/api/v1/tables
 
 
 
