@@ -56,3 +56,21 @@ bundle exec rails s
 
 Now you can setup the authentication and get token using your terminal or in any API development platform.
 
+### Authentication
+
+#### Create new user
+
+```
+curl -H "Content-Type: application/json" -X POST -d '{"email":"user@user.com","password":"123123123"}' http://localhost:3000/authenticate
+
+```
+
+`{"auth_token": <token>}` will be returned.
+
+#### Authenticate user
+
+```
+curl -H "Authorization: <token>" http://localhost:3000/api/v1/tables
+
+```
+Thus you can view the data stored in the `tables` database.
